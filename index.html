@@ -1,33 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <!-- bx슬라이더 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>할리스</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+      </script>
 </head>
 <body>
-    <!-- <img src="로고.jpg"> -->
-                <!--파란점  -->
-    <div style="width: 30px;
-                height: 30px;
-                background: #0012ff;
-                margin-bottom: 20px;
-                "></div>
-                <!-- 초록점 -->
-    <div style="width: 30px;
-                height: 30px;
-                background: #00ff00;
-               "></div>
+    <header style="
+            width: 512px;
+            height: 38px;
+            background: #b5121b;
+            padding-top: 14px;
+            padding-right: 14px;
+            padding-bottom: 14px;
+            padding-left: 14px;
+            ">
+        <p style="
+            width: 105px;
+            height: 29px;
+            padding-top: 9px;
+            background: #c5a46e;
+            border-radius: 19px;
+            font-family:'돋움';
+            font-size: 18px;
+            color: #ffffff;
+            text-align: center;
+        ">가맹문의</p>
+        <h1 style="
+            font-family: 'Arial';
+            font-weight: 900;
+            color: #ffffff;
+            text-align: center;
+            margin-top: -40px;
+            ">HOLLYS</h1>
+        <div style="
+            margin-left: 489px;
+            margin-top: -35px;">
+            <div style="width: 23px;
+                        height: 5px;
+                        background: #ffffff;
+                        border-radius: 1px;
+                        margin-bottom: 4px;
+            "></div>
+            <div style="width: 23px;
+                        height: 5px;
+                        background: #ffffff;
+                        border-radius: 1px;
+                        margin-bottom: 4px;
+            "></div>
+            <div style="width: 23px;
+                        height: 5px;
+                        background: #ffffff;
+                        border-radius: 1px;
+            "></div>
+        </div>
+    </header>
 
-                <h1 style="
-                    font-family: 'Franklin Gothic';
-                    font-weight: 900;
-                    font-size: 116px;
-                    color: #111111;
-                    position: absolute;
-                    left: 62px;
-                    top: -97px;
-                    ">Hansol</h1>
+    <!-- bx 슬라이더 -->
+    <div class="slider">
+        <div>
+            <img src="./mainbanner01.jpg" alt="banner">
+        </div>
+        <div>
+            <img src="./mainbanner02.jpg" alt="banner">
+        </div>
+        <div>
+            <img src="./mainbanner03.jpg" alt="banner">
+        </div>
+        <div>
+            <img src="./mainbanner04.jpg" alt="banner">
+        </div>
+        
+    </div>
+
+    <div>아이콘들</div>
 </body>
 </html>
